@@ -1,0 +1,9 @@
+- In LLMs, tokens are chunks of text that the model processes.
+    - input + output tokens that can be processed at a time are limited for an LLM
+
+- STDIO (standard input/output) : programs communicate via STDIO stream, typically via terminal
+    - Stream : A stream is a sequence of data elements made available over time
+
+- Model Context Protocol (MCP) is like a restaurant. The MCP host is the restaurant itself, the MCP client is the waiter who takes orders and communicates with the kitchen, and the MCP servers are specialized kitchen stations that each handle specific types of requests.
+
+- Tools - functions that LLMs can call	
