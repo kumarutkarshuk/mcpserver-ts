@@ -83,7 +83,7 @@ Example VS Code SSE MCP configuration (`.vscode/mcp.json`):
   "servers": {
     "weather-mcp-server": {
       "type": "sse",
-      // or <deployed-url>/sse
+      // or "https://your-deployment-url.com/sse"
       "url": "http://localhost:3000/sse" 
     }
   }
