@@ -3,6 +3,7 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import z from "zod";
 import { SSEServerTransport } from "@modelcontextprotocol/sdk/server/sse.js";
 import "dotenv/config";
+
 const express = require("express");
 
 if (!process.env.WEATHER_API_KEY) {
@@ -62,6 +63,7 @@ server.registerTool(
   })
 );
 
+// for STDIO
 // async function init() {
 //   const transport = new StdioServerTransport();
 //   await server.connect(transport);
@@ -69,12 +71,14 @@ server.registerTool(
 
 // init();
 
+// streamable HTTP
 // not working
 // app.post("/mcp", async (req, res) => {
 //   const response = await server.handleRequest(req.body);
 //   res.json(response)
 // });
 
+// legacy SSE
 let transport: SSEServerTransport | null = null;
 
 app.get("/sse", (req, res) => {
